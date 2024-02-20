@@ -1,16 +1,41 @@
+# Projeto Transações bancárias 
 
-Aplicação Base / Aplicação de transacoes bancarias
+### Aplicação backend de um software de transações bancárias!
 
-# RF
+## Tecnologias utilizadas 
+
+
+- [Vitest](https://vitest.dev/) (Para testes unitários e E2E)
+- [Fastify](https://fastify.dev/) (Framework para back-end)
+- [ESLint](https://eslint.org/) (Controle de qualidade do codigo)
+- [Zod](https://zod.dev/) (Validação de Schema)
+- [Knex](https://knexjs.org/) (Query Builder de banco de dados)
+
+
+## Models
+
+- User
+  - Session_id(Token)
+ 
+
+- Transaction
+  - title
+  - Amount
+
+## Requisitos da aplicação (Rotas)
+
+### / users
+
+- [x] O usuário deve poder obter um resumo da sua conta;
+- [x] Deve ser possível identificarmos o usuário entre as requisições;
+
+
+
+### / transactions
 
 - [x] O usuário deve poder criar uma nova transação;
-- [x] O usuário deve poder obter um resumo da sua conta;
 - [x] O usuário deve poder listar todas transações que já ocorreram;
 - [x] O usuário deve poder visualizar uma transação única;
-
-# RN
-
 - [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito  subtrairá;
-- [x] Deve ser possível identificarmos o usuário entre as requisições;
 - [x] O usuário só pode visualizar transações o que ele criou;
 
